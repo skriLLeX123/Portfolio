@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Aladin|Overlock|Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+ 
+</head>
+<style>
+body{
+overflow-x: hidden;
+}
+.container-fluid{
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
+}
+.hell{
+  height: 400px;
+}
+  @media only screen and (max-width: 600px) {
+  .hell {
+    height:300px;
+  }
+  #list{
+  list-style-type: none
+}
+}
+@media only screen and (max-width: 1024px) {
+  .hell {
+    height:500px;
+  }
+  #list{
+  list-style-type: none
+}
+}
+@media only screen and (min-width: 1024px) and (orientation: portrait) { 
+  .hell {
+    height:620px;
+  }
+  }
+
+</style>
+<body class="">
+
+  <div class="navbar navbar-dark navbar-expand-sm sticky-top" style="background-color:black">
+    <div class="container-fluid">
+      <div class="">
+          <a href="#"  class="navbar-brand d-none d-xl-none"><i class="fas fa-user-circle fa-lg"></i>
+            Bhushan Shukrachary Navgire</a>
+          <a href="#"  class="navbar-brand d-sm-none">Bhushan S. Navgire</a>
+      </div>
+      
+      <button class="navbar-toggler  bg-dark" type="button" data-toggle="collapse" data-target="#myTogglerNav" 
+      aria-controls="myTogglerNav" aria-expanded="true" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center justify-content-xl-center" id="myTogglerNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-white" href='#'>Home</a>
+          <a class="nav-item nav-link text-white" href='#skills'>Skills</a>
+          <a class="nav-item nav-link text-white" href="#education">Education</a>
+          <a class="nav-item nav-link text-white" href="#">Achievements</a>
+          <a class="nav-item nav-link text-white" href="#">Projects</a>
+          <a class="nav-item nav-link text-white" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="container-fluid m-0 hero" >
+
+  <!--Home page div container -->
+  <div class="row bg-transparent align-items-center hero-overlay" style='height:100vh;background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7) ), 
+                                                                          url(Images/wallpaper.jpg);background-size: cover;background-repeat: no-repeat"'>
+    <div class="col bg-transparent">
+      <div class="text-center mt-1 mt-sm-0">
+          <i class="fas fa-user-circle bg-transparent text-white fa-7x "></i>
+          <p class="mt-3 text-white font-weight-bold h4" style="font-family:'Overlock',cursive;">Bhushan Shukrachary Navgire</p>
+      </div>
+        <blockquote class="blockquote mt-2 mt-md-0 p-4 text-center justify-content-end rounded-0 shadow-lg">
+          <p class="text-light font-weight-md-bold text-sm-dark ml-md-4 ml-lg-0 mb-5 display-5" style="font-family: 'Montserrat', sans-serif;">
+            Python Developer { Backend }&nbsp; | &nbsp;Web Developer&nbsp; | &nbsp;Data Science Practitioner&nbsp; | &nbsp;Cloud Computing Apprentice
+          </p>
+          <div class="codesample col-12 col-md-6 p-4 text-center  m-auto" style="opacity: 0.7;background-color:black">
+            <div class="p-3 font-weight-bold" style="border:3px solid white;border-style:dashed;font-family: 'Overlock', cursive;">
+              <p class="text-warning font-weight-bold h6">if&nbsp;</span>(&nbsp; <span class="text-white">sad( )</span>==<span class="text-success">true</span>&nbsp;){</p>
+              <p class="h6 font-weight-bold text-white">sad( ).<span class="text-danger">stop( )</span>;</p>
+              <p class="h6 font-weight-bold text-info">beAwsome( );&nbsp;}</p>
+              <p class="h6 font-weight-bold text-primary">else &nbsp;{&nbsp;<span class="text-white">keepGOING(&nbsp;)</span>&nbsp;}</p>
+              <footer class="blockquote-footer bg-transparent mt-3 mt-md-3 h3"><span class="h6 p-2 rounded-4 lead text-primary">{
+                  <span class="h6 small text-light">Code
+                  </span><sub class="lead h6 text-warning" title="Source Title">It's 
+                  <span class="text-danger">fun</span></sub>}</span></footer>
+            </div>
+          </div><!--codesample-->
+        </blockquote><!--blockquote-->
+    </div>
+  </div>
+
+  <!--Skillset page div container -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Flamenco|Hi+Melody|Ruthie" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <div id="skills" class="mb-5 mt-5 mb-sm-3">
+  <div class="row" style="background-color: #ffffff">
+    <div class="col-12 mt-5 mt-sm-3 text-center font-weight-bold text-dark h2" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
+      <p>SKILL SET</p>
+      <p class="col-10 offset-1 mt-4 mt-sm-3 text-justify text-sm-justify text-secondary h6" style="letter-spacing: 2px; font-family:'Montserrat', sans-serif;">
+          "I have been working on following technologies from past 6+ years. It all started from my Diploma in Information Technology 
+          followed by Bachelor's in Information Technology and Master of Science in Computer Science, where i came across 
+          computer programming. Since then i have been exploring several different technologies which i found quite interesting.
+          I believe sticking to just one technology in today's modern tech-world will keep your knowledge limited. I strongly believe in Explore more, Learn more."
+      </p>
+    </div>
+  </div>
+    
+
+  <div class="row mt-3">
+    <div class="col-12 text-center">
+      <div class="row justify-content-start h5 text-dark">
+        <div class="col-12 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
+            FRONTEND TECHNOLOGIES
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4 col-sm-2 col-xl-1 shadow-left-lg offset-2 offset-sm-2 offset-xl-4">
+            <i class="fab fa-html5 fa-3x"></i>
+            <p class="mt-2" style="font-family: 'Montserrat', sans-serif;"><small>HTML</small></p>
+        </div>
+        <div class="col-4 col-sm-2 col-xl-1 offset-0 offset-sm-0 offset-xl-0">
+            <i class="fab fa-css3-alt fa-3x"></i>
+            <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>CSS</small></p>
+        </div>
+        <div class="col-4  col-sm-2 col-xl-1 offset-2 offset-sm-0 offset-xl-0">
+            <i class="fab fa-js-square fa-3x"></i>
+            <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>JAVASCRIPT</small></p>
+        </div>
+        <div class="col-4  col-sm-2 col-xl-1 mb-2 offset-0 offset-sm-0  offset-xl-0">
+            <i class="fas fa-bold fa-3x"></i>
+            <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>BOOTSTRAP</small></p>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-start">
+          <div class="col-10 col-sm-12  offset-1 offset-sm-0 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
+              BACKEND TECHNOLOGIES AND FRAMEWORK
+          </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <div class="row">
+            <div class="col-4 col-sm-2 col-xl-1 offset-2 offset-sm-2 offset-xl-4">
+              <i class="fab fa-python fa-3x"></i>
+              <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>PYTHON</small></p>
+            </div>
+            <div class="col-4 col-sm-2 col-xl-1 offset-0 offset-sm-0 offset-xl-0">
+              <i class="fab fa-java fa-3x"></i>
+              <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>JAVA</small></p>
+            </div>
+            <div class="col-4  col-sm-2 col-xl-1 offset-2 offset-sm-0 offset-xl-0">
+              <i class="fas fa-database fa-3x"></i>
+              <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>SQL</small></p>
+            </div>
+            <div class="col-4  col-sm-2 col-xl-1 offset-0 mb-2 offset-sm-0  offset-xl-0">
+              <img class="img-thumbnail bg-transparent border-0"  src="Images/django.png" style="height: 47px"></img>
+              <p class="mt-1 display-5" style="font-family: 'Montserrat', sans-serif;"><small>DJANGO</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-start h5 text-dark" style="font-family: 'Overlock', cursive;">
+          <div class="col-12 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
+              OTHER TOOLS AND TECHNOLOGIES
+          </div>
+      </div>
+      <div class="row mt-4 ml-sm-5 ml-xl-5">
+        <div class="col">
+          <div class="row ml-sm-5 ml-xl-4">
+            <div class="col-4 col-sm-2 col-xl-1 offset-2 offset-sm-2 offset-xl-4 ">
+              <i class="fab fa-aws fa-3x"></i>
+              <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>AWS</small></p>
+            </div>
+            <div class="col-4 col-sm-2 col-xl-1 offset-0 offset-sm-0 offset-xl-0 ">
+              <i class="fab fa-docker fa-3x"></i>
+              <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>DOCKER</small></p>
+            </div>
+            <div class="col-8  col-sm-2 col-xl-1 offset-2 offset-sm-0 mb-5 offset-xl-0 ">
+              <i class="fab fa-github fa-3x"></i>
+              <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>GITHUB</small></p>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Education page div container -->
+
+<div id="education" class="container-fluid mb-5"  id="education" style="background-color: #f5f5f5">
+    <div class="row mt-2">
+        <div class="col-10 underline mt-5 text-center font-weight-bold text-dark h2 offset-1" style="letter-spacing: 5px;font-family: 'Montserrat', sans-serif;">
+          EDUCATION
+        </div>
+      </div>
+  <div class="row mt-5 text-center mb-5">
+    <div class="col-12">
+      <div class="row mt-2 mb-5">
+        <div class="col-10 col-sm-2 shadow-lg col-xl-1 bg-dark border-right offset-1 offset-sm-2 offset-xl-2" style="border-top-left-radius: 22px;">
+            <i class="fas fa-user-graduate fa-5x mt-5 mb-sm-0 mb-5 text-light" ></i>
+        </div>
+          <div class="col-10 col-sm-6 col-xl-3 p-0 offset-sm-0 offset-1">
+              <div class="card shadow-lg bg-white text-left" style="border-bottom-right-radius: 22px;">
+                  <div class="card-body" style="font-family: 'Montserrat', sans-serif;">
+                    <h6 class="card-title font-weight-bold h5"style="letter-spacing: 3px;"">University of Mumbai</h6>
+                    <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">K C College Of Engineering Management Studies And Research</h6>
+                    <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Bachelor of Engineering</h6>
+                    <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Information Technology [Major]</h6>
+                    <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">2013-2016</h6>
+                    <h6 class="text-secondary blockquote-footer font-weight-bold text-right">&nbsp;Mumbai, India</h6>
+                  </div>
+                </div>
+          </div>
+          <div class="col-10 col-sm-2 shadow-lg col-xl-1 bg-dark mt-5 mt-sm-5 mt-xl-0 offset-1 offset-sm-2 offset-xl-0 ml-xl-5 "style="border-top-left-radius: 22px;">
+              <i class="fas fa-user-graduate fa-5x mt-5 mb-5 mb-sm-0  text-light" ></i>
+          </div>
+          <div class="col-10 col-sm-6 col-xl-3 mt-0 mt-sm-5 mt-xl-0 offset-sm-0 offset-1 p-0" >
+              <div class="card shadow-lg bg-white text-left" style="border-bottom-right-radius: 22px;">
+                <div class="card-body" style="font-family: 'Montserrat', sans-serif;">
+                  <h6 class="card-title font-weight-bold h5"style="letter-spacing: 3px;">Pace University</h6>
+                  <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Seidenberg School Of Computer Science and Information Systems</h6>
+                  <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Master of Science</h6>
+                  <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Computer Science [Major]</h6>
+                  <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">2018-2019</h6>
+                  <h6 class="text-secondary blockquote-footer font-weight-bold text-right">&nbsp;New York, USA</h6>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+      
+<div id="Achievements" class="bg-white mt-5 mb-5" id="education">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-10 offset-1 col-sm-10 col-xl-6 offset-sm-1  bg-white align-self-center">
+          <div class="container mt-0 mb-5 align-items-center">
+            <p><h6 class="card-title font-weight-bold h5"style="letter-spacing: 3px;">Achievements</p>
+            <ul class="list-style col-12 text-left" style="list-style-type:square">
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">PCAP - Certified Associate in Python Programming [Python Institute]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Introduction to Python [DataCamp]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Intermediate Python for DataScience [DataCamp]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Importing Data in Python [DataCamp]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Implementation of Django Framework  [LinkedIn]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Bootstrap Training [DataCamp]</h6></li>
+              <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 3px;font-size:14px;">Docker Training [Udemy]</h6></li>
+            </ul>
+          </div>
+        </div>
+
+            <div id="carouselExampleIndicators" data-interval="3000" class="container h-100 carousel slide col-10 col-sm-10 col-xl-4 offset-1 offset-sm-1 offset-xl-0 mb-0 border-5 bg-white" data-ride="carousel">
+                <ol class="carousel-indicators mt-0">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6" class="bg-dark"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7" class="bg-dark"></li>
+                </ol>
+                <div class="carousel-inner hell bg-white">
+                  <div class="container  carousel-item active">
+                    <img class="img-fluid mt-5" src="Images/Intropython.jpg" alt="First slide">
+                  </div>
+                  <div class="container carousel-item">
+                      <img class="img-fluid mt-5" src="Images/Intermediatepython.jpg" alt="Third slide">
+                  </div>
+                  <div class="container  carousel-item">
+                    <img class="img-fluid mt-5" src="Images/Import.jpg" alt="Second slide">
+                  </div>
+                  <div class="container  carousel-item">
+                      <img class="img-fluid " src="Images/PCAP.jpg" alt="Third slide">
+                  </div>
+                  <div class="container carousel-item">
+                      <img class="img-fluid" src="Images/Django.jpg" alt="Third slide">
+                  </div>
+                  <div class="container carousel-item">
+                      <img class="img-fluid " src="Images/Restapi.jpg" alt="Third slide">
+                  </div>
+                  <div class="container carousel-item">
+                      <img class="img-fluid " src="Images/Bootstrap.jpg" alt="Third slide">
+                    </div>
+                  <div class="container carousel-item">
+                      <img class="img-fluid " src="Images/Docker.jpg" alt="Third slide">
+                  </div>
+                  
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+  
+</div>   
+    
+  </div>
+    </body>
+    </html>
