@@ -19,6 +19,7 @@
     document.querySelector('#education').scrollIntoView({ 
   behavior: 'smooth' 
 });
+$("#divToBeScrolledTo").offset().top - 10
   </script>
 </head>
 <style>
@@ -89,7 +90,7 @@ overflow-x: hidden;
       </button>
 
       <div class="collapse navbar-collapse justify-content-center justify-content-xl-center" id="myTogglerNav">
-        <div class="navbar-nav" style="letter-spacing:1px;font-family:'Montserrat',sans-serif;font-size: 13px;">
+        <div class="navbar-nav" data-target=".navbar-collapse" data-toggle="collapse" style="letter-spacing:1px;font-family:'Montserrat',sans-serif;font-size: 13px;">
           <a class="nav-item nav-link text-white" href='#'>Home</a>
           <a class="nav-item nav-link text-white" href='#skills'>Skills</a>
           <a class="nav-item nav-link text-white" href="#education">Education</a>
@@ -115,7 +116,7 @@ overflow-x: hidden;
           <p class="text-white main-subtitle font-weight-bold text-sm-white ml-md-4 ml-lg-0 mb-5 h6" style="letter-spacing: 1px; font-family:'Montserrat', sans-serif;">
             Python Developer { Backend }&nbsp; | &nbsp;Web Developer&nbsp; | &nbsp;Data Science Practitioner&nbsp; | &nbsp;Cloud Computing Apprentice
           </p>
-          <div class="codesample d-none d-sm-block col-12 col-md-6 p-4 text-center  m-auto" style="  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */">
+          <div class="codesample d-none d-md-block col-12 col-md-6 p-4 text-center  m-auto" style="  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */">
             <div class="p-3 d-none d-sm-block font-weight-bold" style="letter-spacing:1px;border:3px solid white;border-style:dashed;font-family: 'Montserrat', sans-serif;">
               <p class="text-warning font-weight-bold h6">if&nbsp;</span>(&nbsp; <span class="text-white">sad( )</span>==<span class="text-success">true</span>&nbsp;){</p>
               <p class="h6 font-weight-bold text-white">sad( ).<span class="text-danger">stop( )</span>;</p>
@@ -389,7 +390,7 @@ overflow-x: hidden;
                   <p class="card-text projectp h6 text-justify"> Worked on different components and utilities of Bootstrap. URL for portfolio :
                   <a href="www.navgire.com">www.navgire.com</a></p>
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">HTML | CSS | Bootstrap </span></P>
-                  <p href="#d" class="projectp pt-4 blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
+                  <p href="#d" class="projectp pt-4 blockquote-footer card-text text-dark font-weight-bold text-right"><a href="https://github.com/skriLLeX123/Portfolio">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
               </div>
               <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 ml-xl-5 shadow-lg p-0" style="border-radius: 25px;">
