@@ -15,9 +15,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <title>Portfolio</title>
- 
+  <script>
+    document.querySelector('#education').scrollIntoView({ 
+  behavior: 'smooth' 
+});
+  </script>
 </head>
 <style>
+  html {
+  scroll-behavior: smooth;
+}
 body{
 overflow-x: hidden;
 }
@@ -41,6 +48,14 @@ overflow-x: hidden;
   }
   #list{
   list-style-type: none
+}
+.main-subtitle{
+  font-size:17px;
+  font-weight: bold;
+  color:black
+}
+.main-title{
+  font-size:20px;
 }
 }
 @media only screen and (min-width:601px) and (max-width: 1024px) {
@@ -68,19 +83,19 @@ overflow-x: hidden;
           <a href="#"  class="navbar-brand d-sm-none">Bhushan S. Navgire</a>
       </div>
       
-      <button class="navbar-toggler  bg-dark" type="button" data-toggle="collapse" data-target="#myTogglerNav" 
+      <button class="navbar-toggler" style="background-color:black;" type="button" data-toggle="collapse" data-target="#myTogglerNav" 
       aria-controls="myTogglerNav" aria-expanded="true" aria-label="Toggle Navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-center justify-content-xl-center" id="myTogglerNav">
-        <div class="navbar-nav">
+        <div class="navbar-nav" style="letter-spacing:1px;font-family:'Montserrat',sans-serif;font-size: 13px;">
           <a class="nav-item nav-link text-white" href='#'>Home</a>
           <a class="nav-item nav-link text-white" href='#skills'>Skills</a>
           <a class="nav-item nav-link text-white" href="#education">Education</a>
-          <a class="nav-item nav-link text-white" href="#">Achievements</a>
-          <a class="nav-item nav-link text-white" href="#">Projects</a>
-          <a class="nav-item nav-link text-white" href="#">Contact</a>
+          <a class="nav-item nav-link text-white" href="#Achievements">Achievements</a>
+          <a class="nav-item nav-link text-white" href="#projects">Projects</a>
+          <a class="nav-item nav-link text-white" href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -88,19 +103,20 @@ overflow-x: hidden;
   <div class="container-fluid m-0 hero" >
 
   <!--Home page div container -->
-  <div class="row bg-transparent align-items-center hero-overlay" style='height:100vh;background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7) ), 
-                                                                          url(Images/wallpaper.jpg);background-size: cover;background-repeat: no-repeat"'>
-    <div class="col bg-transparent">
-      <div class="text-center mt-1 mt-sm-0">
+  <div class="row  hero-overlay" style='height:100vh;background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
+                                                               url(Images/grasswall1.jpeg);background-size: cover;background-repeat: no-repeat"'>
+    
+    <div class="col m-auto">
+     <div class="text-center mt-0 mt-sm-0">
           <i class="fas fa-user-circle bg-transparent text-white fa-7x "></i>
-          <p class="mt-3 text-white font-weight-bold h4" style="letter-spacing: 2px; font-family:'Montserrat', sans-serif;">Bhushan Shukrachary Navgire</p>
+          <p class="mt-3 text-white main-title font-weight-bold h5" style="letter-spacing: 2px; font-family:'Montserrat',sans-serif;">Bhushan Shukrachary Navgire</p>
       </div>
-        <blockquote class="blockquote mt-2 mt-md-0 p-4 text-center justify-content-end rounded-0 shadow-lg">
-          <p class="text-light font-weight-md-bold text-sm-dark ml-md-4 ml-lg-0 mb-5 display-5" style="letter-spacing: 1px; font-family:'Montserrat', sans-serif;">
+        <blockquote class="blockquote mt-2 mt-md-0 p-4 text-center justify-content-end rounded-0">
+          <p class="text-white main-subtitle font-weight-bold text-sm-white ml-md-4 ml-lg-0 mb-5 h6" style="letter-spacing: 1px; font-family:'Montserrat', sans-serif;">
             Python Developer { Backend }&nbsp; | &nbsp;Web Developer&nbsp; | &nbsp;Data Science Practitioner&nbsp; | &nbsp;Cloud Computing Apprentice
           </p>
-          <div class="codesample col-12 col-md-6 p-4 text-center  m-auto" style="opacity: 0.7;background-color:black">
-            <div class="p-3 font-weight-bold" style="letter-spacing:1px;border:3px solid white;border-style:dashed;font-family: 'Montserrat', sans-serif;">
+          <div class="codesample d-none d-sm-block col-12 col-md-6 p-4 text-center  m-auto" style="  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */">
+            <div class="p-3 d-none d-sm-block font-weight-bold" style="letter-spacing:1px;border:3px solid white;border-style:dashed;font-family: 'Montserrat', sans-serif;">
               <p class="text-warning font-weight-bold h6">if&nbsp;</span>(&nbsp; <span class="text-white">sad( )</span>==<span class="text-success">true</span>&nbsp;){</p>
               <p class="h6 font-weight-bold text-white">sad( ).<span class="text-danger">stop( )</span>;</p>
               <p class="h6 font-weight-bold text-info">beAwsome( );&nbsp;}</p>
@@ -123,10 +139,10 @@ overflow-x: hidden;
     <div class="col-12 mt-2 mt-sm-3 text-center font-weight-bold text-dark h2" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
       <p>SKILL SET</p>
       <p class="col-10 offset-1 mt-5 mt-sm-4 text-justify text-sm-justify text-secondary h6" style="letter-spacing: 2px; font-family:'Montserrat', sans-serif;">
-          "I have been working on following technologies from past 6+ years. It all started from my Diploma in Information Technology 
-          followed by Bachelor's in Information Technology and Master of Science in Computer Science, where i came across 
-          computer programming. Since then i have been exploring several different technologies which i found quite interesting.
-          I believe sticking to just one technology in today's modern tech-world will keep your knowledge limited. I strongly believe in Explore more, Learn more."
+          "I have been working on following technologies from past 5+ years. It all started from my Diploma in Information Technology 
+          followed by Bachelor's in Information Technology and Master of Science in Computer Science, where I came across 
+          computer programming and their fundamentals. Since then I have been exploring several different technologies which I found quite interesting.
+          I believe sticking to just one technology in today's modern tech-world will keep your knowledge limited. I strongly believe in, 'Explore more, Learn more'."
       </p>
     </div>
   </div>
@@ -135,12 +151,14 @@ overflow-x: hidden;
   <div class="row mt-3">
     <div class="col-12 text-center">
       <div class="row justify-content-start h5 text-dark">
-        <div class="col-12 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
-            FRONTEND TECHNOLOGIES
+        <div class="col-10 col-xl-10 offset-1 offset-xl-1 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
+            FRONTEND AND BACKEND TECHNOLOGIES
         </div>
+        
       </div>
+      
       <div class="row mt-4">
-        <div class="col-4 col-sm-2 col-xl-1 shadow-left-lg offset-2 offset-sm-2 offset-xl-4">
+        <div class="col-4 col-sm-2 col-xl-1 shadow-left-lg offset-2 offset-sm-2 offset-xl-2">
             <i class="fab fa-html5 fa-3x"></i>
             <p class="mt-2" style="font-family: 'Montserrat', sans-serif;"><small>HTML</small></p>
         </div>
@@ -156,34 +174,24 @@ overflow-x: hidden;
             <i class="fas fa-bold fa-3x"></i>
             <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>BOOTSTRAP</small></p>
         </div>
-      </div>
-      <div class="row mt-2 justify-content-start">
-          <div class="col-10 col-sm-12  offset-1 offset-sm-0 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
-              BACKEND TECHNOLOGIES AND FRAMEWORK
+        <div class="col-4 col-sm-2 col-xl-1 offset-2 offset-sm-2 offset-xl-0">
+            <i class="fab fa-python fa-3x"></i>
+            <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>PYTHON</small></p>
+          </div>
+          <div class="col-4 col-sm-2 col-xl-1 offset-0 offset-sm-0 offset-xl-0">
+            <i class="fab fa-java fa-3x"></i>
+            <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>JAVA</small></p>
+          </div>
+          <div class="col-4  col-sm-2 col-xl-1 offset-2 offset-sm-0 offset-xl-0">
+            <i class="fas fa-database fa-3x"></i>
+            <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>SQL</small></p>
+          </div>
+          <div class="col-4  col-sm-2 col-xl-1 offset-0 mb-2 offset-sm-0  offset-xl-0">
+            <img class="img-thumbnail bg-transparent border-0"  src="Images/django.png" style="height: 47px"></img>
+            <p class="mt-1 display-5" style="font-family: 'Montserrat', sans-serif;"><small>DJANGO</small></p>
           </div>
       </div>
-      <div class="row mt-4">
-        <div class="col">
-          <div class="row">
-            <div class="col-4 col-sm-2 col-xl-1 offset-2 offset-sm-2 offset-xl-4">
-              <i class="fab fa-python fa-3x"></i>
-              <p class="mt-1" style="font-family: 'Montserrat', sans-serif;"><small>PYTHON</small></p>
-            </div>
-            <div class="col-4 col-sm-2 col-xl-1 offset-0 offset-sm-0 offset-xl-0">
-              <i class="fab fa-java fa-3x"></i>
-              <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>JAVA</small></p>
-            </div>
-            <div class="col-4  col-sm-2 col-xl-1 offset-2 offset-sm-0 offset-xl-0">
-              <i class="fas fa-database fa-3x"></i>
-              <p class="mt-1 h6" style="font-family: 'Montserrat', sans-serif;"><small>SQL</small></p>
-            </div>
-            <div class="col-4  col-sm-2 col-xl-1 offset-0 mb-2 offset-sm-0  offset-xl-0">
-              <img class="img-thumbnail bg-transparent border-0"  src="Images/django.png" style="height: 47px"></img>
-              <p class="mt-1 display-5" style="font-family: 'Montserrat', sans-serif;"><small>DJANGO</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
+  
       <div class="row mt-2 justify-content-start h5 text-dark" style="font-family: 'Overlock', cursive;">
           <div class="col-12 h6 text-dark font-weight-bold" style="letter-spacing:1px;font-family:'Montserrat', sans-serif;">
               OTHER TOOLS AND TECHNOLOGIES
@@ -213,7 +221,8 @@ overflow-x: hidden;
 
   <!--Education page div container -->
 
-<div id="education" class="container-fluid mb-5"  id="education" style="background-color: #f5f5f5">
+<div id="education" class="container-fluid mb-5"  id="education" style="background-color: #f5f5f5" style="height:100vh">
+  
     <div class="row mt-2">
         <div class="col-10 underline mt-5 text-center font-weight-bold text-dark h2 offset-1" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
           <p>EDUCATION</p>
@@ -222,33 +231,33 @@ overflow-x: hidden;
   <div class="row mt-3  text-center mb-5">
     <div class="col-12">
       <div class="row mt-2 mb-5">
-        <div class="col-10 col-sm-2 shadow-lg col-xl-1 bg-dark border-right offset-1 offset-sm-2 offset-xl-2" style="border-top-left-radius: 22px;">
+        <div class="col-8 col-sm-2 shadow-lg col-xl-1 bg-dark border-right offset-2 offset-sm-2 offset-xl-2" style="border-top-left-radius: 22px;">
             <i class="fas fa-user-graduate fa-5x mt-5 mb-sm-0 mb-5 text-light" ></i>
         </div>
-          <div class="col-10 col-sm-6 col-xl-3 p-0 offset-sm-0 offset-1">
-              <div class="card shadow-lg bg-white text-left" style="border-bottom-right-radius: 22px;">
+          <div class="col-8 col-sm-6 col-xl-3 p-0 offset-sm-0 offset-2">
+              <div class="card shadow-lg bg-white text-center text-xl-left" style="border-bottom-right-radius: 22px;">
                   <div class="card-body" style="font-family: 'Montserrat', sans-serif;">
-                    <h6 class="card-title font-weight-bold h5"style="letter-spacing: 3px;"">University of Mumbai</h6>
+                    <h6 class="card-title edu-title font-weight-bold h5"style="letter-spacing: 3px;"">University of Mumbai</h6>
                     <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">K C College Of Engineering Management Studies And Research</h6>
                     <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Bachelor of Engineering</h6>
                     <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Information Technology [Major]</h6>
                     <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">2013-2016</h6>
-                    <h6 class="text-secondary blockquote-footer font-weight-bold text-right">&nbsp;Mumbai, India</h6>
+                    <h6 class="text-secondary mt-4 mt-sm-0 blockquote-footer font-weight-bold text-right">&nbsp;Mumbai, India</h6>
                   </div>
                 </div>
           </div>
-          <div class="col-10 col-sm-2 shadow-lg col-xl-1 bg-dark mt-5 mt-sm-5 mt-xl-0 offset-1 offset-sm-2 offset-xl-0 ml-xl-5 "style="border-top-left-radius: 22px;">
+          <div class="col-8 col-sm-2 shadow-lg col-xl-1 bg-dark mt-5 mt-sm-5 mt-xl-0 offset-2 offset-sm-2 offset-xl-0 ml-xl-5 "style="border-top-left-radius: 22px;">
               <i class="fas fa-user-graduate fa-5x mt-5 mb-5 mb-sm-0  text-light" ></i>
           </div>
-          <div class="col-10 col-sm-6 col-xl-3 mt-0 mt-sm-5 mt-xl-0 offset-sm-0 offset-1 p-0" >
-              <div class="card shadow-lg bg-white text-left" style="border-bottom-right-radius: 22px;">
+          <div class="col-8 col-sm-6 col-xl-3 mt-0 mt-sm-5 mt-xl-0 offset-sm-0 offset-2 p-0" >
+              <div class="card shadow-lg bg-white text-center text-xl-left" style="border-bottom-right-radius: 22px;">
                 <div class="card-body" style="font-family: 'Montserrat', sans-serif;">
                   <h6 class="card-title font-weight-bold h5"style="letter-spacing: 3px;">Pace University</h6>
                   <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Seidenberg School Of Computer Science and Information Systems</h6>
                   <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Master of Science</h6>
                   <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Computer Science [Major]</h6>
                   <h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">2018-2019</h6>
-                  <h6 class="text-secondary blockquote-footer font-weight-bold text-right">&nbsp;New York, USA</h6>
+                  <h6 class="text-secondary mt-4 mt-sm-0 blockquote-footer font-weight-bold text-right">&nbsp;New York, USA</h6>
                 </div>
               </div>
             </div>
@@ -257,20 +266,21 @@ overflow-x: hidden;
   </div>
 </div>
   
-      
-<div id="Achievements" class="bg-white mt-5 mb-5" id="education">
+  <!--achievements page div container -->
+    
+  <div id="Achievements" class="bg-white mt-5 mb-5">
     <div class="row mt-0">
         <div class="col-10 underline mt-3 text-center font-weight-bold text-dark h2 offset-1" style="letter-spacing: 5px;font-family: 'Montserrat', sans-serif;">
           ACHIEVEMENTS
         </div>
-      </div>
-  <div class="row">
+    </div>
+    <div class="row">
     <div class="col-12">
       <div class="row">
         <div class="col-10 offset-1 col-sm-10 col-xl-6 offset-sm-1  bg-white align-self-center">
           <div class="container mt-0 text-center text-md-left mb-5 align-items-center">
             <p><h6 class="card-title mt-0 mt-sm-4 mt-xl-0 font-weight-xl-bold h5"style="letter-spacing: 3px;">CERTIFICATIONS/TRAINING</p>
-            <ul class="list-style col-12 text-justify" style="list-style-type:square">
+            <ul class="list-style col-12 mt-xl-3 text-left" style="list-style-type:square">
               <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">PCAP - Certified Associate in Python Programming [Python Institute]</h6></li>
               <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Introduction to Python [DataCamp]</h6></li>
               <li class="show col-12"><h6 class="text-secondary" style="letter-spacing: 1px;font-size:14px;">Intermediate Python for DataScience [DataCamp]</h6></li>
@@ -281,8 +291,7 @@ overflow-x: hidden;
             </ul>
           </div>
         </div>
-
-            <div id="carouselExampleIndicators" data-interval="3000" class="container h-100 carousel slide col-10 col-sm-10 col-xl-4 offset-1 offset-sm-1 offset-xl-0 mb-0 border-5 bg-white" data-ride="carousel">
+        <div id="carouselExampleIndicators" data-interval="3000" class="container h-100 carousel slide col-10 col-sm-10 col-xl-4 offset-1 offset-sm-1 offset-xl-0 mb-0 border-5 bg-white" data-ride="carousel">
                 <ol class="carousel-indicators mt-0">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
@@ -336,18 +345,20 @@ overflow-x: hidden;
       </div>
     </div>
 
-<div class="container-fluid" style="background-color:#f5f5f5">
+      <!--Prjects page div container -->
+
+  <div class="container-fluid" id="projects" style="background-color:#f5f5f5;">
     <div class="row mt-2">
         <div class="col-10 underline mt-5 text-center font-weight-bold text-dark h2 offset-1" style="font-family: 'Montserrat', sans-serif;">
           <p style="letter-spacing: 3px;">PERSONAL | ACADEMIC PROJECTS</p>
         </div>
-      </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-10 col-sm-12 col-xl-10 mt-5 mb-5 align-content-center offset-1 offset-sm-0 offset-xl-1">
-          <div class="row justify-content-center" style="letter-spacing: 1px;font-family: 'Montserrat', sans-serif;">
-            <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 shadow-lg p-0" style="border-radius: 25px;">
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-10 col-sm-12 col-xl-10 mt-5 mb-5 align-content-center offset-1 offset-sm-0 offset-xl-1">
+            <div class="row justify-content-center" style="letter-spacing: 1px;font-family: 'Montserrat', sans-serif;">
+              <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 ml-xl-5 shadow-lg p-0" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 1</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">Pet Cure</h5>
@@ -356,8 +367,8 @@ overflow-x: hidden;
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">HTML | CSS | DJANGO | PYTHON</span></P>
                   <p href="#d" class="projectp pt-5 blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
-            </div>
-            <div class="card col-10 col-sm-5 mt-4 mt-sm-0 col-xl-3 mr-1 mr-sm-3 mr-xl-4 p-0 align-self-center shadow-lg" style="border-radius: 25px;">
+              </div>
+              <div class="card col-10 col-sm-5 mt-4 mt-sm-0 col-xl-3 mr-1 mr-sm-3 mr-xl-4 p-0 align-self-center shadow-lg" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 2</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">Project using Docker</h5>
@@ -366,10 +377,10 @@ overflow-x: hidden;
                   <p class="card-text projectp h6 text-justify"> The project also involved implementation of RESTful webservices. Click here for 
                   <a href="https://screencast-o-matic.com/watch/cFhfntb0VC" class="card-link">Project Tutorial</a></p>
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">DOCKER | FLASK | PYTHON</span></P>
-                  <p href="#d" class="projectp  blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
+                  <p href="#d" class="projectp  blockquote-footer card-text text-dark font-weight-bold text-right"><a href="https://github.com/skriLLeX123/DockerProject">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
-            </div>
-            <div class="card mt-4 mt-xl-0 col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 p-0 shadow-lg" style="border-radius: 25px;">
+              </div>
+              <div class="card mt-4 mt-xl-0 col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 p-0 shadow-lg" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 3</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">Portfolio</h5>
@@ -380,8 +391,8 @@ overflow-x: hidden;
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">HTML | CSS | Bootstrap </span></P>
                   <p href="#d" class="projectp pt-4 blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
-            </div>
-            <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 shadow-lg p-0" style="border-radius: 25px;">
+              </div>
+              <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 ml-xl-5 shadow-lg p-0" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 4</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">HTTP Message Pattern</h5>
@@ -390,8 +401,8 @@ overflow-x: hidden;
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">HTML | CSS | DJANGO | PYTHON</span></P>
                   <p href="#d" class="projectp blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
-            </div>
-            <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 shadow-lg p-0" style="border-radius: 25px;">
+              </div>
+              <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 shadow-lg p-0" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 5</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">Enterprise Resource Planning</h5>
@@ -400,8 +411,8 @@ overflow-x: hidden;
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">JAVA | J2EE | HTML | CSS | BOOTSTRAP</span></P>
                   <p href="#d" class="projectp  blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
-            </div>
-            <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 shadow-lg p-0" style="border-radius: 25px;">
+              </div>
+              <div class="card col-10 col-sm-5 col-xl-3 mr-1 mr-sm-3 mr-xl-4 mt-4 mt-xl-4 shadow-lg p-0" style="border-radius: 25px;">
                 <div class="card-body" style="border-radius: 25px;">
                   <h5 class="card-title h6 text-center font-weight-bold">Project 6</h5>
                   <h5 class="card-subtitle h6 mt-1 text-center f5 font-weight-bold">TIC-TAC-TOE GAME</h5>
@@ -410,18 +421,60 @@ overflow-x: hidden;
                   <P class="projectp mt-3 card-text text-dark font-weight-bold">Tools and Technologies Used : <br><span class="font-weight-normal">ANACONDA JUPYTER NOTEBOOK | PYTHON  </span></P>
                   <p href="#d" class="projectp blockquote-footer card-text text-dark font-weight-bold text-right"><a href="#">GITHUB <i class="fab fa-github fa-2x text-dark"></i> </a></p>
                 </div>
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  <!-- <p>Developed a web application for course registration using DJango Framework</p>
-  <p>Developed a web application to implement Restapi functionality using Flask</p>
-  <p>Developed a web application to demonstrate how Restapi works using Django</p>
-  <p>Developed a web application using Django which provides details on vaccination for pets</p>
-  <p>Created a Tic Tac Toe game using</p>
-  <p>Developed personal Portfolio using Bootstrap 4</p> -->
-  
-    
   </div>
+
+  <!--Contact page div container -->
+
+
+    <div class="container-fluid" id="contact" style="background-color: #1b1b1b">
+      <div class="row mt-2">
+        <div class="col-10 underline mt-5 text-center font-weight-bold text-secondary h2 offset-1" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
+          <p>CONTACT ME</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 mt-3 offset-1 text-light" style="width: 100%">
+          <div class="row">
+            <div class="col-12 col-xl-6 p-md-5 w-100 " style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
+              <p class="card-title h4 text-justify">BHUSHAN SHUKRACHARY NAVGIRE</p>
+              <small class="text-light text-justify">I would be happy to hear from you, if you have any questions/queries feel free to contact me at following contact details.</small>
+              <p class="h6 mt-4 pl-xl-4"><i class="fas fa-phone fa-1x"></i>&nbsp;&nbsp;+1 (201)-899-5587</p>
+              <p class="h6 mt-4 pl-xl-4"><i class="fab fa-skype fa-1x"></i>&nbsp;&nbsp;live:bhushan.navgire_1</p>
+              <p class="h6 mt-4 d-none d-sm-block pl-xl-4"><i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;bhushan.navgire@gmail.com</p>
+              <p class="h6 mt-4 d-none d-sm-block pl-xl-4"><i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;bn98772n@pace.edu</p>
+              <p class="mt-4 d-sm-none pl-xl-4"><i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;bhushan.navgire@gmail.com</p>
+              <p class="mt-4 d-sm-none pl-xl-4"><i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;bn98772n@pace.edu</p>
+           </div>
+            <div class="col-sm-8 offset-sm-2 mt-4 mb-5 mt-sm-0 col-xl-4 p-md-5 w-100 aling-self-start align-self-xl-end offset-xl-1 justify-content-center" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;">
+              <div class="row blockquote-footer text-sm-left text-xl-center text-white justify-content-center text-center">
+                <p class="text-light">You can also connect with me on following social media platform.</p>
+                <a class="col-2 row m-auto" href="https://www.linkedin.com/in/bhushan-navgire" style="border-radius: 50px;height:60px;background-color: #f5f5f5">
+                    <i class="fab fa-linkedin-in text-dark fa-2x m-auto"></i>
+                </a>
+                <a class="col-2 row m-auto" href="https://github.com/skriLLeX123" style="border-radius: 50px;height:60px;background-color: #f5f5f5">
+                    <i class="fab fa-github fa-2x text-dark m-auto"></i>
+                </a>
+                <a class="col-2 row m-auto" href="https://www.instagram.com/navgirebhushan" style="border-radius: 50px;height:60px;background-color: #f5f5f5">
+                    <i class="fab fa-instagram fa-2x text-dark m-auto"></i>
+                </a>
+                <a class="col-2 row m-auto" href="https://www.facebook.com/profile.php?id=100001357718652" style="border-radius: 50px;height:60px;background-color: #f5f5f5">
+                    <i class="fab fa-facebook-f fa-2x text-dark m-auto"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!--Container page div container -->
+  <footer class=" p-3 pb-5 text-center blockquote-footer text-secondary" style="letter-spacing: 2px;font-family: 'Montserrat', sans-serif;background-color: #1b1b1b">All Work © Bhushan Shukrachary Navgire | All rights reserved.</footer>
+</div>
     </body>
     </html>
